@@ -72,9 +72,9 @@ find this line:
 genai.configure(api_key="YOUR_API_KEY")
 ```
 add youe api key:
-```bash
-🔗 https://aistudio.google.com/apikey
-```
+
+🔗 [https://aistudio.google.com/apikey](https://aistudio.google.com/api-keys?projectFilter=gen-lang-client-0667367413)
+
 
 ## **▶️ Run the Backend Server**
 
