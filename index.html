@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+  <div class="chat-header">
+    <span>Gemini AI Chatbot</span>
+
+    <div class="header-buttons">
+      <button id="voiceBtn">🎤</button>
+      <button id="clearBtn">🧹</button>
+      <button id="themeBtn">🌙</button>
+    </div>
+  </div>
+
+  <div id="chat-box" class="chat-box"></div>
+
+  <!-- Typing Indicator -->
+  <div id="typing" class="typing hidden">Gemini is typing...</div>
+
+  <div class="input-area">
+    <input id="user-input" type="text" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
