@@ -69,7 +69,7 @@ app.py
 ```
 find this line:
 ```bash
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="API_key")
 ```
 add youe api key:
 
