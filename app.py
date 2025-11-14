@@ -1,12 +1,15 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import google.generativeai as genai
+import os   # <-- IMPORT OS to read environment variables
 
-genai.configure(api_key="API_KEY")
+# Read API key from system environment variables
+genai.configure(api_key=os.getenv("API_KEY"))
+
 model = genai.GenerativeModel("models/gemini-2.5-flash")
 
 app = Flask(__name__)
-CORS(app)  # <-- VERY IMPORTANT
+CORS(app)  # Allow frontend to connect
 
 @app.post("/chat")
 def chat():
